@@ -39,7 +39,8 @@ dependencies {
 	//OpenAI
 	implementation 'com.theokanning.openai-gpt3-java:service:0.18.2'
 
-
+	//for wordCloud
+	implementation 'org.python:jython-standalone:2.7.2'
 
 
 	// H2 Database

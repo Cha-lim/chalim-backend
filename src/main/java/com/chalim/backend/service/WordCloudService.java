@@ -1,12 +1,37 @@
 package com.chalim.backend.service;
 
+import org.python.core.PyObject;
+import org.python.util.PythonInterpreter;
+import org.springframework.stereotype.Service;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+
+@Service
 public class WordCloudService {
     public String generateWordCloudImage() {
-        // 워드클라우드 로직
+        String imagePath = "";
 
-        // 워드클라우드 URL 반환
-        String imageUrl = "http://wordcloud.png";
-        return imageUrl;
+        try (PythonInterpreter pyInterp = new PythonInterpreter()) {
+            // Python 스크립트 파일 경로
+            String scriptPath = "path/to/wordcloud_generator.py";
+
+            // Python 스크립트 실행
+            pyInterp.exec("exec(open('" + scriptPath + "').read())");
+
+            // Python 함수 호출
+            PyObject pyObject = pyInterp.get("generate_wordcloud");
+            PyObject result = pyObject.__call__();
+
+            // 이미지 파일의 경로를 반환
+            imagePath = result.toString();
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return imagePath;
     }
-
 }
