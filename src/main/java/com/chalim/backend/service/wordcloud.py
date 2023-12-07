@@ -9,6 +9,7 @@ def generate_wordcloud(text, save_path='static/wordcloud/wordcloud.png'):
     tokens = okt.nouns(text)
 
     # 단어 빈도수 계산
+
     word_counts = {}
     for token in tokens:
         if len(token) > 1:  # 길이가 1인 단어는 제외
