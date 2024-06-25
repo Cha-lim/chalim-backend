@@ -1,16 +1,60 @@
 # chalim-backend
 차림 백엔드팀 레포지토리입니다.
 
-### 사용할 기술 스택
-    언어: Java
-    프레임워크: SpringBoot 
-    DB: Mysql
-    ORM: JPA
-    AI 모델 서빙: Flask
-    배포: AWS
 
+## **📍**프로젝트 소개
+<img width="537" alt="스크린샷 2024-06-25 오후 11 29 23" src="https://github.com/Cha-lim/chalim-backend/assets/95922668/e88be2c1-a8bb-46fd-8e6e-38c4bc72297e">
 
-### 1. 커밋 유형 지정
+---
+
+## **📍사용 기술 스택**
+
+- **프레임워크**: Spring Boot, Flask
+- **언어**: Java 17, python
+- **데이터베이스**: H2 (runtime only)
+- **API 클라이언트**: Google Maps Services, Open AI
+- **유효성 검사**: Hibernate Validator
+- **클라우드 서비스**: Naver Cloud Platform
+- **컨테이너**: Docker
+
+---
+
+## **📍아키텍처**
+<img width="745" alt="스크린샷 2024-06-25 오후 11 29 33" src="https://github.com/Cha-lim/chalim-backend/assets/95922668/366e2fad-8338-4865-8669-d7c1cf7a60ee">
+
+---
+
+## **📍역할**
+
+-   시스템 아키텍처 설계
+-   Docker를 사용한 코드 컨테이너화
+-   Flask를 이용한 AI 모델 서빙_OCR 모델을 API로 통합하여 서비스 제공
+-   Open AI를 이용한 메뉴 설명 API
+-   사용자 위치 좌표 전송 및 음식점 조회
+-   워드클라우드
+
+---
+
+## **📍개발 환경**
+
+- **운영체제**: Ubuntu 20.04
+- **IDE/에디터**: IntelliJ IDEA, Visual Studio Code
+- **버전 관리**: Git, GitHub
+- **패키지 매니저**: Maven Central, pip (Flask 용)
+- **기타 도구**: Lombok, H2 Database (for in-memory database testing)
+
+---
+
+## **📍협업 도구**
+
+- **커뮤니케이션**: Slack
+- **프로젝트 및 문서 관리**: Notion
+    <img width="625" alt="스크린샷 2024-06-25 오후 11 29 43" src="https://github.com/Cha-lim/chalim-backend/assets/95922668/6216ceb8-997a-4c66-9ec5-03cd2925baa5">
+
+- **API Test:** Postman
+- **기타 도구**: 게더 타운(협업 및 실시간 피드백 도구)
+  
+### 커밋 유형 지정
 
 - 커밋 유형은 영어 대문자로 작성하기
     
