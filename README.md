@@ -12,7 +12,7 @@
 - **프레임워크**: Spring Boot, Flask
 - **언어**: Java 17, python
 - **데이터베이스**: H2 (runtime only)
-- **API 클라이언트**: Google Maps Services, Open AI
+- **API 클라이언트**: KaKao Maps Services, Open AI
 - **유효성 검사**: Hibernate Validator
 - **클라우드 서비스**: Naver Cloud Platform
 - **컨테이너**: Docker
