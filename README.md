@@ -20,11 +20,6 @@
 
 ---
 
-## **📍아키텍처**
-<img width="745" alt="스크린샷 2024-06-25 오후 11 29 33" src="https://github.com/Cha-lim/chalim-backend/assets/95922668/366e2fad-8338-4865-8669-d7c1cf7a60ee">
-
----
-
 ## **📍역할**
 
 -   시스템 아키텍처 설계
